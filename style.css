@@ -1,0 +1,147 @@
+:root {
+  --dark: #05386b;
+  --dark-green: #379683;
+  --primary: #5cdb95;
+  --light: #edf5e1;
+  --grey: #888888;
+}
+
+html {
+  font-size: 21px;
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: var(--primary);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+.box {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.businesscard {
+  border-radius: 12px;
+  border-top: 3px solid var(--dark-green);
+  box-shadow: 0px 30px 40px -20px var(--grey);
+  padding: 3rem 5rem 5rem 5rem;
+  background-color: var(--light);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title__main {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.title__sub {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+}
+
+.title__info {
+  font-size: 1rem;
+}
+
+.contact {
+  display: flex;
+  font-family: Roboto Mono, Arial, Helvetica, sans-serif;
+}
+
+.contact-box {
+  flex: 1 1 0;
+  width: 0;
+}
+
+.contact__country {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .box {
+    margin-top: 5rem;
+  }
+
+  .businesscard {
+    height: 100%;
+    width: 100%;
+    border-top: none;
+    border-radius: 0;
+    padding-top: 10vh;
+    box-shadow: 0px 30px 40px -20px var(--grey),
+      0px -30px 40px -20px var(--grey);
+  }
+
+  .title {
+    margin-bottom: 5rem;
+  }
+
+  .title__main {
+    letter-spacing: 2px;
+  }
+
+  .title__sub {
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-box--links {
+    margin-top: 2rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .title__main {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .title__sub {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+
+  .title__info {
+    font-size: 0.8rem;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-box--links {
+    margin-top: 2rem;
+    line-height: 1.6rem;
+  }
+}
