@@ -23,7 +23,7 @@ body {
 }
 
 .box {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,6 @@ body {
 
   .businesscard {
     height: 100%;
-    width: 100%;
     border-top: none;
     border-radius: 0;
     padding-top: 10vh;
@@ -143,5 +142,19 @@ body {
   .contact-box--links {
     margin-top: 2rem;
     line-height: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    background-color: var(--light);
+  }
+  .box {
+    min-height: 0;
+    margin-top: 0;
+  }
+
+  .businesscard {
+    box-shadow: none;
   }
 }
