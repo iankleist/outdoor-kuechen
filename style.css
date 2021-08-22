@@ -1,13 +1,14 @@
 :root {
   --dark: #05386b;
-  --dark-green: #379683;
+  --dark-green: #ffdf64;
   --primary: #5cdb95;
-  --light: #edf5e1;
+  --light: #f4faff;
   --grey: #888888;
 }
 
 html {
   font-size: 21px;
+  height: 100%;
 }
 
 @media screen and (max-width: 1600px) {
@@ -17,7 +18,17 @@ html {
 }
 
 body {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(background.jpeg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   color: var(--dark);
 }
@@ -31,10 +42,11 @@ body {
 
 .businesscard {
   border-radius: 12px;
-  border-top: 3px solid var(--dark-green);
-  box-shadow: 0px 30px 40px -20px var(--grey);
+  border-top: 3px solid black;
+  box-shadow: 0px 30px 40px -20px black;
   padding: 3rem 5rem 5rem 5rem;
   background-color: var(--light);
+  position: relative;
 }
 
 .title {
@@ -148,6 +160,7 @@ body {
 @media screen and (max-width: 620px) {
   body {
     background-color: var(--light);
+    background-image: none;
   }
   .box {
     min-height: 0;
