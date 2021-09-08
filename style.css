@@ -97,6 +97,10 @@ body {
   text-align: justify;
 }
 
+.divider--image {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .box {
     margin-top: 5rem;
@@ -200,5 +204,16 @@ body {
     box-shadow: none;
     border-radius: 0;
     border-top: none;
+  }
+
+  .divider--image {
+    display: inline-block;
+    width: 100%;
+    max-height: 9rem;
+    margin: 1rem 0;
+  }
+
+  .divider--line {
+    display: none;
   }
 }
