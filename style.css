@@ -2,13 +2,26 @@
   --dark: #05386b;
   --dark-green: #ffdf64;
   --primary: #5cdb95;
-  --light: #f4faff;
+  /* --light: #f4faff; */
+  --light: #ffffff;
   --grey: #888888;
 }
 
 html {
   font-size: 16px;
   height: 100%;
+}
+
+a {
+  color: #0000ff;
+}
+
+a:visited {
+  color: #0000ff;
+}
+
+a:hover {
+  color: #000099;
 }
 
 @media screen and (max-width: 1600px) {
@@ -92,9 +105,11 @@ body {
 }
 
 .description-item {
-  padding: 0 2rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   text-align: justify;
+  line-height: 1.4;
+  background-color: #eeeeee;
 }
 
 .divider--image {
@@ -197,7 +212,8 @@ body {
   }
 
   .description-item {
-    padding: 0;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
   }
 
   .businesscard {
