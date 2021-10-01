@@ -1,5 +1,5 @@
 :root {
-  --dark: #05386b;
+  --dark: #000;
   --dark-green: #ffdf64;
   --primary: #5cdb95;
   /* --light: #f4faff; */
@@ -8,7 +8,7 @@
 }
 
 html {
-  font-size: 21px;
+  font-size: 18px;
   height: 100%;
 }
 
@@ -32,17 +32,17 @@ body {
       rgba(0, 0, 0, 0.2)
     ),
     url(background.png);
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-size: auto 150%;
+  font-family: Yantramanav, Arial, Helvetica, sans-serif;
   color: var(--dark);
 }
 
 .box {
-  margin-top: 5rem;
+  margin-top: 3rem;
   min-height: 80vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@ body {
   border-top: 3px solid black;
   box-shadow: 0px 30px 40px -20px black;
   padding: 3rem 5rem 5rem 5rem;
-  max-width: 1400px;
+  max-width: 1200px;
   background-color: var(--light);
   position: relative;
 }
@@ -80,7 +80,7 @@ body {
 .contact {
   display: flex;
   padding: 0 2rem;
-  font-family: Roboto Mono, Arial, Helvetica, sans-serif;
+  font-family: Yantramanav, Arial, Helvetica, sans-serif;
 }
 
 .contact-box {
@@ -104,7 +104,7 @@ body {
   margin: 0.5rem;
   text-align: justify;
   line-height: 1.4;
-  background-color: #eeeeee;
+  background-color: #fff;
 }
 
 .divider--image {
@@ -219,7 +219,7 @@ body {
 
   .description-item {
     padding: 1rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .divider--image {
